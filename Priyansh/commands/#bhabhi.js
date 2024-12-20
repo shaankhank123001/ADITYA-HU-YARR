@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-  name: "#bhabhi.js",
+  name: "bhabhi",
     version: "1.1.1",
   hasPermssion: 0,
   credits: "𝐏𝐑𝐈𝐘𝐀𝐍𝐒𝐇𝐈 𝐊𝐀𝐔𝐑", 
@@ -12,12 +12,12 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
-  if(react.includes("gayatri") ||
-     react.includes("Gayatri") || react.includes("bhabhi") || react.includes("Bhabhi") ||
-react.includes("GAYATRI") ||
-react.includes("Gayatri jaiswal")) {
+  if(react.includes("BHAbhi") ||
+     react.includes("BhaBhi") || react.includes("bhaBhi") || react.includes("Bhabhi") ||
+react.includes("bhabhi") ||
+react.includes("BHABHI")) {
     var msg = {
-        body: `😛𝐌𝐀𝐈 𝐁𝐎𝐓 😹𝐇𝐔𝐍 𝐓𝐎 𝐊𝐘𝐀 𝐇𝐔𝐀😛 𝐌𝐀𝐈 𝐁𝐇𝐈 𝐁𝐇𝐀𝐁𝐇𝐈 😆𝐁𝐎𝐋𝐔𝐍𝐆𝐀👻𝐁𝐇𝐀𝐁𝐇𝐈😸`,
+        body: `😛 𝐌𝐚𝐢  𝐁𝐨𝐓 😹 𝐇𝐮 𝐓𝐨 𝐊𝐲𝐚 𝐇𝐮𝐚 😛 𝐌𝐚𝐢 𝐁𝐡𝐢 𝐁𝐡𝐚𝐁𝐡𝐢 😆 𝐁𝐨𝐋𝐮𝐧𝐆𝐚 👻 𝐁𝐡𝐚𝐁𝐡𝐢 😸`,
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🥰", event.messageID, (err) => {}, true)
